@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>kyochon1991</title>
+    <title>index</title>
 </head>
 <body>
-    교촌치킨 메인화면
+    <script>
+        // 현재 접속한 기기가 모바일인지 pc인지 여부 체크하기
+        var filter='win16|win32|win64|mac';
+        if(navigator.platform){
+            if(0>filter.indexOf(navigator.platform.toLocaleLowerCase())){
+                location.href='/kyochon/mobile.html'
+            }else{
+                location.href='/kyochon/pc.html'
+            }
+        }
+    </script>
 </body>
 </html>
